@@ -7,11 +7,12 @@ function Select({ name, text }) {
 
       <label htmlFor={name}>{text}</label>
       <select name={name} id={name}>
-        <option value="">Selecione uma categoria</option>
-        <option value="">Ficção científica</option>
-        <option value="">Fantasia heróica</option>
-        <option value="">Suspense</option>
+        <option value="">Selecione um gênero</option>
+        <option value="">Ação</option>
+        <option value="">Aventura</option>
+        <option value="">RPG</option>
         <option value="">Terror</option>
+        <option value="">FPS</option>
       </select>
 
     </div>
