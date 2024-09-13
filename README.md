@@ -1,4 +1,4 @@
-# Bolt
+# Bolt ⚡
 
 Bem-vindo ao repositório da **Bolt**! Este projeto é uma aplicação de e-commerce dedicada à venda de jogos eletrônicos. A loja permite que usuários naveguem por uma vasta seleção de jogos, adicionem itens ao carrinho e finalizem suas compras de forma segura e eficiente.
 
@@ -7,10 +7,7 @@ Bem-vindo ao repositório da **Bolt**! Este projeto é uma aplicação de e-comm
 - [Visão Geral](#visão-geral)
 - [Recursos](#recursos)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Instalação e Configuração](#instalação-e-configuração)
-- [Uso](#uso)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
+- [Contato](#contato)
 
 ## Visão Geral
 
@@ -34,15 +31,12 @@ A **Bolt** é uma plataforma online onde os usuários podem:
 
 - **Front-end:** HTML, CSS, JavaScript, React
 - **Back-end:** Node.js, Express
-- **Banco de Dados:** MongoDB
-- **Autenticação:** JWT (JSON Web Tokens)
-- **Pagamentos:** Stripe API (ou outra solução de pagamento)
+- **Banco de Dados:** MongoDB, MySQL, Firebase
 
-## Instalação e Configuração
+## Contato
 
-Para rodar o projeto localmente, siga os passos abaixo:
+Se você tiver alguma dúvida ou sugestão, entre em contato comigo:
 
-1. **Clone o Repositório:**
-
-   ```bash
-   git clone https://github.com/seu-usuario/loja-de-jogos.git
+Email: prudenciopvp@gmail.com
+GitHub: https://github.com/Pruds52
+Espero que gostem deste projeto!!!😁
