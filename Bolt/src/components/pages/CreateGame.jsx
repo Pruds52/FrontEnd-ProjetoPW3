@@ -6,7 +6,7 @@ import Button from "../forms/Button"
 
 const CreateGame = () => {
   return (
-    <section className={style.create_book_container}>
+    <section className={style.create_game_container}>
 
       <div className={style.forms}>
 
