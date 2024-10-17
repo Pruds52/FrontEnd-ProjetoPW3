@@ -12,9 +12,9 @@ const NavBar = () => {
           <Link to="/">
             <li className={style.item}>Home</li>
           </Link>
-          <Link to="/createGame">
+          {/* <Link to="/createGame">
             <li className={style.item}>Cadastrar Jogo</li>
-          </Link>
+          </Link> */}
           <Link to="/gamesList">
             <li className={style.item}>Lista de Jogos</li>
           </Link>
