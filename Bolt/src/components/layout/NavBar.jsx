@@ -7,7 +7,7 @@ const NavBar = () => {
       <nav className={style.navbar}>
         <ul className={style.list}>
           <li className={style.item}>
-            <img className={style.logo} src="./logo.webp" />
+            <img className={style.logo} src="./logo.webp" alt="Logo" />
           </li>
           <Link to="/">
             <li className={style.item}>Home</li>
@@ -19,6 +19,9 @@ const NavBar = () => {
             <li className={style.item}>Lista de Jogos</li>
           </Link>
         </ul>
+        <Link to="/createUser">
+          <p className={style.createUserBtn}>Cadastre-se</p>
+        </Link>
       </nav>
       <Outlet />
     </>

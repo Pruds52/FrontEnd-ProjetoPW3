@@ -1,7 +1,9 @@
 .navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #000000;
+    padding-right: 20px;
 }
 
 .list{
@@ -29,3 +31,19 @@
 .navbar a{
     text-decoration: none;
 }
+
+.createUserBtn {
+    background-color: #ffee00;
+    color: black;
+    font-weight: 650;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: auto; 
+  }
+  
+  .createUserBtn:hover {
+    background-color: #ffd000;
+  }
