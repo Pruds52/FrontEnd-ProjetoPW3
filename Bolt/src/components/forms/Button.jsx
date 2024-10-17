@@ -5,7 +5,7 @@ function Button({rotulo}){
     return(
 
         <div>
-            <button>{rotulo}</button>
+            <button type="submit">{rotulo}</button>
         </div>
 
     )
