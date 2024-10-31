@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./GamesList.module.css";
 import { useState, useEffect } from "react";
-// import BookCard from "../CardBooks";
+import CardGame from "../CardGames";
 import Container from "../layout/Container";
-// import ContainerBook from "../layout/ContainerBook"
+import ContainerJogo from "../layout/ContainerJogo"
 
 const GamesList = () => {
   const [jogos, setJogos] = useState([]);
@@ -31,22 +31,21 @@ const GamesList = () => {
 
   return (
     <Container>
-      {/* <section className={style.list_book_container}>
-        <h1>LIST BOOKS</h1>
+      <section className={style.gamelist_container}>
+        <h1>Lista de Jogos</h1>
 
-        <ContainerBook>
-          {books.map((book) => (
-            // console.log(book.nome_livro)
-            <BookCard
-              cod_livro={book.cod_livro}
-              titulo={book.nome_livro}
-              autor={book.autor_livro}
-              imagem={cavernas}
-              key={book.cod_livro}
+        <ContainerJogo>
+          {jogos.map((jogo) => (
+            <CardGame
+              jogoId={jogo.JogoId}
+              titulo={jogo.JogoNome}
+              desenvolvedora={jogo.Desenvolvedora}
+              descricao={jogo.Descricao}
+              key={jogo.JogoId}
             />
           ))}
-        </ContainerBook>
-      </section> */}
+        </ContainerJogo>
+      </section>
     </Container>
   );
 };

@@ -1,0 +1,35 @@
+.cardGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #DEDEDE;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #CCC;
+    font-family: Helvetica;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.desenvolvedora {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.descricao {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    word-wrap: break-word;
+    margin-top: 10px;
+}
