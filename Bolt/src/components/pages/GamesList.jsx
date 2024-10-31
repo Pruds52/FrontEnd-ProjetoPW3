@@ -1,14 +1,54 @@
-import React from "react"
-import style from "./GamesList.module.css"
+import React from "react";
+import style from "./GamesList.module.css";
+import { useState, useEffect } from "react";
+// import BookCard from "../CardBooks";
+import Container from "../layout/Container";
+// import ContainerBook from "../layout/ContainerBook"
 
-const GamesList = ()=>{
+const GamesList = () => {
+  const [jogos, setJogos] = useState([]);
 
-    return(
-        <section className={style.list_book_container}>
-            <h1>Lista de Jogos</h1>
-        </section>
-    )
-    
-}
+  useEffect(() => {
+    fetch("http://localhost:3333/jogo", {
+      method: "GET",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
+      },
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        console.log(data);
+        setJogos(data);
+        console.log(jogos);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
-export default GamesList
+  return (
+    <Container>
+      {/* <section className={style.list_book_container}>
+        <h1>LIST BOOKS</h1>
+
+        <ContainerBook>
+          {books.map((book) => (
+            // console.log(book.nome_livro)
+            <BookCard
+              cod_livro={book.cod_livro}
+              titulo={book.nome_livro}
+              autor={book.autor_livro}
+              imagem={cavernas}
+              key={book.cod_livro}
+            />
+          ))}
+        </ContainerBook>
+      </section> */}
+    </Container>
+  );
+};
+
+export default GamesList;
