@@ -59,7 +59,7 @@ const CreateGame = () => {
                         name="nome"
                         placeHolder="Digite seu nome"
                         text="Nome:"
-                        handlerChangeUser={handlerChangeUser}
+                        handlerChange={handlerChangeUser}
                     />
 
                     <Input
@@ -67,7 +67,7 @@ const CreateGame = () => {
                         name="email"
                         placeHolder="Digite seu email"
                         text="Email:"
-                        handlerChangeUser={handlerChangeUser}
+                        handlerChange={handlerChangeUser}
 
                     />
 
@@ -76,14 +76,14 @@ const CreateGame = () => {
                         name="senha"
                         placeHolder="Digite sua senha"
                         text="Senha:"
-                        handlerChangeUser={handlerChangeUser}
+                        handlerChange={handlerChangeUser}
                     />
 
                     <Input
                         type="date"
                         name="dataNascimento"
                         text="Data de Nascimento:"
-                        handlerChangeUser={handlerChangeUser}
+                        handlerChange={handlerChangeUser}
                     />
 
                     <Button
