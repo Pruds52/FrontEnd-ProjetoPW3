@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import CardGame from "../CardGames";
 import Container from "../layout/Container";
 import ContainerJogo from "../layout/ContainerJogo"
+import JogoImg from "../../assets/jogo.png"
 
 const GamesList = () => {
   const [jogos, setJogos] = useState([]);
@@ -38,9 +39,8 @@ const GamesList = () => {
           {jogos.map((jogo) => (
             <CardGame
               jogoId={jogo.JogoId}
+              imagem={JogoImg}
               titulo={jogo.JogoNome}
-              desenvolvedora={jogo.Desenvolvedora}
-              descricao={jogo.Descricao}
               key={jogo.JogoId}
             />
           ))}
