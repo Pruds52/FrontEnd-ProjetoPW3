@@ -7,7 +7,7 @@ const CardGames = ({ titulo, desenvolvedora, jogoId, imagem }) => {
       <h1 className={style.titulo}>{titulo}</h1>
       <h3 className={style.desenvolvedora}>{desenvolvedora}</h3>
       <img src={imagem} alt={`Imagem do jogo ${titulo}`} className={style.imagem}/>
-      <Button label="Detalhes" router={`/DetailGame/${jogoId}`} cod_livro={jogoId} />
+      <Button label="Detalhes" router={`/DetailGame/`} jogoId={jogoId} />
     </div>
   );
 };
