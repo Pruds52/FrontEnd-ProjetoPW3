@@ -1,0 +1,43 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .imagem {
+    width: auto;
+    max-height: 70%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .titulo {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .desenvolvedora {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .descricao {
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+    margin-top: 15px;
+    line-height: 1.5;
+  }

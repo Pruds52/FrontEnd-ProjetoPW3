@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import CardGame from "../CardGames";
 import Container from "../layout/Container";
 import ContainerJogo from "../layout/ContainerJogo"
+import JogoImg from "../../assets/jogo.png"
 
 const GamesList = () => {
   const [jogos, setJogos] = useState([]);
-
   useEffect(() => {
     fetch("http://localhost:3333/jogo", {
       method: "GET",
@@ -28,19 +28,16 @@ const GamesList = () => {
         console.log(err);
       });
   }, []);
-
   return (
     <Container>
       <section className={style.gamelist_container}>
         <h1>Lista de Jogos</h1>
-
         <ContainerJogo>
           {jogos.map((jogo) => (
             <CardGame
               jogoId={jogo.JogoId}
+              imagem={JogoImg}
               titulo={jogo.JogoNome}
-              desenvolvedora={jogo.Desenvolvedora}
-              descricao={jogo.Descricao}
               key={jogo.JogoId}
             />
           ))}
@@ -49,5 +46,4 @@ const GamesList = () => {
     </Container>
   );
 };
-
 export default GamesList;

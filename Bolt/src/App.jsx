@@ -6,30 +6,29 @@ import GamesList from "./components/pages/GamesList";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CreateGame from "./components/pages/CreateGame";
 import CreateUser from "./components/pages/CreateUser"
+import DetailGame from "./components/pages/DetailGame";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-
         <Container>
 
           <Routes>
-
-             <Route path="/" element={<NavBar/>}>
-              <Route path="/" element={<Home/>}/>
-              <Route path="/gamesList" element={<GamesList/>}/>
-              <Route path="/createGame" element={<CreateGame/>}/>
-              <Route path="/createUser" element={<CreateUser/>}/>
+            
+            <Route path="/" element={<NavBar />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/gamesList" element={<GamesList />} />
+              <Route path="/createGame" element={<CreateGame />} />
+              <Route path="/createUser" element={<CreateUser />} />
+              <Route path="/detailGame/:jogoId" element={<DetailGame />} />
             </Route>
 
           </Routes>
-          
-        </Container>
 
+        </Container>
       </BrowserRouter>
     </>
   );
 }
-
 export default App;
