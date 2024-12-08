@@ -3,12 +3,13 @@ import style from "./CreateGame.module.css";
 import Input from "../forms/Input";
 import Select from "../forms/Select";
 import Button from "../forms/Button";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const UpdateGame = () => {
     const [generos, setGeneros] = useState([]);
     const [jogo, setJogo] = useState({});
     const { jogoId } = useParams();
+    const navigate = useNavigate();
 
     function handlerChangeJogo(event) {
         setJogo({ ...jogo, [event.target.name]: event.target.value });
@@ -60,7 +61,7 @@ const UpdateGame = () => {
         })
             .then((resp) => resp.json())
             .then((data) => {
-                console.log(data);
+                navigate(`/gameslist`)
             })
             .catch((err) => console.log(err));
     }
