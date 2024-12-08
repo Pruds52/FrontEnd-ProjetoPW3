@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useSyncExternalStore } from "react";
 import style from "./CreateGame.module.css";
 import Input from "../forms/Input";
 import Select from "../forms/Select";
@@ -39,6 +39,7 @@ const CreateGame = () => {
       });
   }, []);
 
+
   function cadastrarJogo(jogo) {
 
     console.log(JSON.stringify(jogo))
@@ -68,7 +69,7 @@ const CreateGame = () => {
 
   function submit(event) {
     event.preventDefault();
-    cadastrarJogo(jogo);
+      cadastrarJogo(jogo);
   }
 
 

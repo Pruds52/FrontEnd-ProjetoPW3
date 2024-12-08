@@ -52,6 +52,10 @@ const DetailGame = () => {
             )
     }
 
+    function updateJogo(){
+        navigate(`/updateGame/${jogoId}`)
+    }
+
     return (
         <Container>
             <section className={style.game_container}>
@@ -65,7 +69,7 @@ const DetailGame = () => {
                             imagem={JogoImg}
                         />
                         <div className={style.buttonsContainer}>
-                            <button className={style.editButton}>Editar</button>
+                            <button className={style.editButton} onClick={updateJogo}>Editar</button>
                             <button className={style.deleteButton} onClick={deletarJogo}>Excluir</button>
                         </div>
                     </div>
